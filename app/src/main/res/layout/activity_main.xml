@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AXIOM"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tagline TextView -->
+    <TextView
+        android:id="@+id/textViewTagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulting Service"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- First Name -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/textViewTagline"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="First Name"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Last Name -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewFirstName"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Last Name"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Email -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewLastName"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Address -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewEmail"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Address"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Phone Number -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewAddress"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:inputType="phone"
+            android:hint="Phone Number"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- GitHub Link -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGithubLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewPhoneNumber"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/editTextGithubLink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="GitHub Link"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_below="@id/cardViewGithubLink"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="297dp"
+            android:layout_height="match_parent"
+            android:text="Save" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Display First Name -->
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- CardView for Date Selection -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFirstName"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/buttonPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Time Selection -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewDate"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/buttonPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Reminder Description -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewTime"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/editTextReminderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reminder Description"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Save Reminder Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewDescription"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/buttonSaveReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Reminder"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
